@@ -14,7 +14,16 @@ const Navbar = () => {//blah blah
       <Link to="/students" style={{ marginRight: "1rem" }}>
         Student
       </Link>
-     
+      {/* remember to link this to the forms */}
+     <Link to="/campus" style={{ marginRight: "1rem" }}>
+        Log In
+      </Link>
+      <Link to="/students" style={{ marginRight: "1rem" }}>
+        Sign Up
+      </Link>   
+      <Link to="/students" style={{ marginRight: "1rem" }}>
+        Log Out
+      </Link>   
     </nav>
   );
 };
