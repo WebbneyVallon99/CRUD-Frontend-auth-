@@ -1,17 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-
-
 const SignUp = () => {
-    return (
-
-    <div>
-        <h1>Sign up</h1>
-    </div>
-
-
-    );
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>Username: </label>
+        <input
+          type="text"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+      </div>
+      <div>
+        <label>Password: </label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  );
 };
 
-export SignUp;
+export default SignUp;
